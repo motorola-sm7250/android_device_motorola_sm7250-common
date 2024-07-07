@@ -33,6 +33,9 @@ media.settings.xml=/vendor/etc/media_profiles_vendor.xml
 ro.media.recorder-max-base-layer-fps=60
 vendor.swvdec.log.level=1
 vendor.vidc.debug.level=1
+persist.mm.enable.prefetch=true
+mmp.enable.3g2=true
+media.aac_51_output_enabled=true
 
 # Memory optimizations
 ro.vendor.qti.sys.fw.bservice_age=5000

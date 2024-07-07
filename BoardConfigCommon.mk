@@ -211,6 +211,7 @@ TARGET_WLAN_POWER_STAT := "/sys/kernel/wlan/power_stats"
 # Properties
 TARGET_PRODUCT_PROP += $(VENDOR_PATH)/product.prop
 TARGET_SYSTEM_PROP += $(VENDOR_PATH)/system.prop
+TARGET_SYSTEM_EXT_PROP += $(VENDOR_PATH)/system_ext.prop
 TARGET_VENDOR_PROP += $(VENDOR_PATH)/vendor.prop
 
 # Recovery
