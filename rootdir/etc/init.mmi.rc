@@ -435,5 +435,12 @@ on property:persist.sys.locale=*
 on property:ro.carrier=softbank
     setprop audio.camerasound.force true
 
-on property:ro.sys.force_max_chrg_temp=*
-    write /sys/class/power_supply/battery/device/force_max_chrg_temp ${ro.sys.force_max_chrg_temp}
+# Set Max charging temp found in system/bin/init.mmi.carrier.sh for T-mobile/MetroPCS
+on property:ro.carrier=metropcs
+    setprop ro.vendor.force_max_chrg_temp 55
+
+on property:ro.carrier=tmo
+    setprop ro.vendor.force_max_chrg_temp 55
+
+on property:ro.vendor.force_max_chrg_temp=*
+    write /sys/class/power_supply/battery/device/force_max_chrg_temp ${ro.vendor.force_max_chrg_temp}
