@@ -29,4 +29,4 @@ ro.qcom.ims.use_moto_vt_ext=true
 media.stagefright.thumbnail.prefer_hw_codecs=true
 
 # SurfaceFlinger
-ro.surface_flinger.supports_background_blur=1
+ro.surface_flinger.supports_background_blur=0
