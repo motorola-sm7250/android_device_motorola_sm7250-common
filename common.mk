@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 # Audio (Dolby Atmos)
-$(call inherit-product, vendor/motorola-dolby/setup.mk)
+$(call inherit-product, hardware/dolby/dolby.mk)
 
 # Add common definitions for Qualcomm
 $(call inherit-product, hardware/qcom-caf/common/common.mk)
