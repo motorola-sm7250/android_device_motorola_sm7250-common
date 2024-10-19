@@ -170,7 +170,7 @@ DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += \
     $(VENDOR_PATH)/framework_compatibility_matrix.xml \
     hardware/qcom-caf/common/vendor_framework_compatibility_matrix.xml \
     hardware/qcom-caf/common/vendor_framework_compatibility_matrix_legacy.xml \
-    vendor/lineage/config/device_framework_matrix.xml
+    vendor/pixelage/config/device_framework_matrix.xml
 DEVICE_MATRIX_FILE := $(VENDOR_PATH)/compatibility_matrix.xml
 DEVICE_MANIFEST_FILE += $(VENDOR_PATH)/manifest.xml
 
@@ -219,7 +219,7 @@ TARGET_VENDOR_PROP += $(VENDOR_PATH)/vendor.prop
 # Recovery
 BOARD_INCLUDE_DTB_IN_BOOTIMG := true
 BOARD_INCLUDE_RECOVERY_DTBO := true
-TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
+TARGET_RECOVERY_PIXEL_FORMAT := RGBX_8888
 TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_USE_F2FS := true
 TARGET_RECOVERY_FSTAB := $(VENDOR_PATH)/rootdir/etc/fstab.qcom
