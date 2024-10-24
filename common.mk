@@ -19,6 +19,9 @@ $(call inherit-product, hardware/motorola/dolby/setup.mk)
 # Add common definitions for Qualcomm
 $(call inherit-product, hardware/qcom-caf/common/common.mk)
 
+# Project ID Quota
+$(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
+
 # Get non-open-source specific aspects
 $(call inherit-product-if-exists, vendor/motorola/sm7250-common/sm7250-common-vendor.mk)
 
